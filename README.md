@@ -1,2 +1,0 @@
-# UDM-Alumni-Portal
-
