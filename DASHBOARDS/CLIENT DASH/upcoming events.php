@@ -46,8 +46,8 @@
           </li>
           <li>
             <a href="mapping.php">
-              <i class="fas fa-map-marked-alt"></i>
-              <div>Forum</div>
+            <i class="fas fa-question"></i>
+                <div>Query</div>
             </a>
           </li>
           <li>

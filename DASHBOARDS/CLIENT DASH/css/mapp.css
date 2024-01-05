@@ -1,4 +1,51 @@
-		/* Styling the Body element i.e. Color,
+body {
+	background: url('bg/udm.jpg');
+}
+
+.container1 {
+	margin-top: -20px;
+}
+
+.container2 {
+	/* Add your container styles here */
+}
+
+.job {
+	/* Add your job styles here */
+}
+
+.edit-form {
+	/* Add your form styles here */
+}
+
+.form {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+}
+
+.btn {
+	/* Add your button styles here */
+}
+
+.queries {
+	margin-top: 20px;
+}
+
+.query {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.success-message {
+	color: green;
+}
+
+.error-message {
+	color: red;
+}
+	/* Styling the Body element i.e. Color,
 		Font, Alignment */  
 
 		/* Styling the Form (Color, Padding, Shadow) */

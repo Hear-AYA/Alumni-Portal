@@ -74,7 +74,7 @@
     <nav>
         <div class="logo">
             <img src="img/udm logo.png" alt="UDMLOGO">
-            <label class="LOGO" style="color: #F7B787;">Universidad De Manila</label>
+            <label class="LOGO" style="color: #EE7214;">Universidad De Manila</label>
             <ul>
                 <img src="img/cet.png" alt="CETLogo" class="cetlogo">
             </ul>
