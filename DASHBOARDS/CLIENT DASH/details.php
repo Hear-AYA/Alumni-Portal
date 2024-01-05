@@ -31,7 +31,7 @@
   <div class="container1">
       <div class="topbar">
         <p>Welcome Almuni!</p>
-          <img src="img/udm logo.png" alt="Avatar" class="avatar">          
+          <img src="img/udm logo.png" alt="Avatar" class="avatar">       
         </div>
        <div class="sidebar" style="font-size: 16px;">
         <h1 style="margin-top: 0px; font-size: 32px;"><b>Dashboard</b></h1>

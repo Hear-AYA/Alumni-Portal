@@ -12,7 +12,7 @@
 
 
         <div class="container2">
-          <h3>EVENTS & NEWS</h3>
+          <h3>Events</h3>
           
           <a class="button button1" href="add_events.php">Add Event & News</a>
           <!-- <button class="button button2">Edit</button> -->

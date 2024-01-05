@@ -9,7 +9,10 @@
     border: 1px solid black;
 /*    padding: 20px;*/
 }
-
+.job-search{
+  margin-top: 80px;
+  margin-left: 300px
+}
 table {
     background-color: antiquewhite;
     font-weight: bold;
@@ -21,18 +24,22 @@ table {
     width: 75%;
     
 }
-
-
 </style>
-<body style="background: url('img/UDM_Lights.jpg') ;">
 
+<body style="background: url('img/UDM_Lights.jpg') ;">
+<div class="search-bar">
+        <input class="job-search" type="text" placeholder="Search here..."/>
+        </div>
     <img src="img/aaa.jpg" alt="avt" class="avt">
     <div class="container-fluid" >
       <?php
         include'navigation.php';
       ?>
+       
       <center>
+      
     <table style="background: white !important; padding: 20px !!important; text-align: center;">
+    
         <tr>
             <th><center>Name</center></th>
             <th><center>Degree</center></th>

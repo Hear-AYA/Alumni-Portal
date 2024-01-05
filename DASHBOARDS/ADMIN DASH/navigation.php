@@ -1,6 +1,7 @@
 <div class="topbar">
-        <p>Welcome Admin!</p>
-        <img src="img/udm logo.png" alt="Avatar" class="" style="width: 45px;height: 45px;position: absolute;left: 95px;">          
+        <p style="color: #F7B787;">Welcome Admin!</p>
+        <img src="img/udm logo.png" alt="Avatar" class="" style="width: 45px;height: 45px;position: absolute;left: 95px;"> 
+        <img src="img/cet.png" alt="CETLogo" class="cetlogo" style="width: 60px; position: absolute; right: 10px;">      
       </div>
         <!-- <img src="" alt="avt" class="avt"> -->
 
@@ -17,19 +18,19 @@
             <li>
               <a href="alumnirecords.php">
                 <i class="fas fa-id-card"></i>
-                <div>Alumni Records</div>
+                <div>Alumni Information</div>
               </a>
             </li>
             <li>
               <a href="Job.php">
                 <i class="fas fa-user-tie"></i>
-                <div>Job Offerings</div>
+                <div>Job List</div>
               </a>
             </li>
             <li>
               <a href="mapping.php">
                 <i class="fas fa-map-marked-alt"></i>
-                <div>Mapping Alumni Trajectories</div>
+                <div>Forum</div>
               </a>
             </li>
             <li>

@@ -19,8 +19,9 @@
     
   <div class="container1">
       <div class="topbar">
-        <p>Welcome Alumni!</p>
-          <img src="img/udm logo.png" alt="Avatar" class="avatar">          
+        <p style="color: #F7B787;">Welcome Alumni!</p>
+          <img src="img/udm logo.png" alt="Avatar" class="avatar">   
+          <img src="img/cet.png" alt="CETLogo" class="cetlogo" style="width: 60px; position: absolute; right: 10px;">       
         </div>
        <div class="sidebar" style="font-size: 16px;">
         <h1 style="margin-top: 0px; font-size: 32px;"><b>Dashboard</b></h1>
@@ -28,25 +29,25 @@
           <li>  
             <a href="upcoming events.php">
             <i class="fas fa-bullhorn"></i>
-            <div>Events</div>
+            <div>Announcement</div>
             </a>
           </li>           
           <li>
             <a href="myprofile.php">
               <i class="fas fa-id-card"></i>
-              <div>My Profile</div>
+              <div>Profile Details</div>
             </a>
           </li>
           <li>
             <a href="Job.php">
               <i class="fas fa-user-tie"></i>
-              <div>Job Offerings</div>
+              <div>Jobs</div>
             </a>
           </li>
           <li>
             <a href="mapping.php">
               <i class="fas fa-map-marked-alt"></i>
-              <div>Mapping Alumni Trajectories</div>
+              <div>Forum</div>
             </a>
           </li>
           <li>

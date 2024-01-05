@@ -17,6 +17,7 @@
         <div class="logo">
             <img src="img/udm logo.png" alt="UDMLOGO">
             <label class="LOGO">Universidad De Manila</label>
+            <img src="img/cet.png" alt="CETLogo" class="cetlogo">
             <ul>
             </ul>
         </div>
