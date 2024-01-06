@@ -19,12 +19,15 @@
 <style type="text/css">
   td{
     padding: 2px 2px;
+    font-weight: bold;
+    font-size: 35px
   }
+
   input{
     width: ;
   }
+
 </style>
-<body style="background: url('bg/udm.jpg');">
     
   <div class="container1"   style="margin-top:-20px;">
       <?php 

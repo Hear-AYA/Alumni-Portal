@@ -26,11 +26,10 @@ table {
 }
 </style>
 
-<body style="background: url('img/UDM_Lights.jpg') ;">
 <div class="search-bar">
         <input class="job-search" type="text" placeholder="Search here..."/>
         </div>
-    <img src="img/aaa.jpg" alt="avt" class="avt">
+    <img src="img/bg.png" alt="avt" class="avt">
     <div class="container-fluid" >
       <?php
         include'navigation.php';

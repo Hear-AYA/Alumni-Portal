@@ -2,8 +2,7 @@
       include'connect/connect.php';
       include'header.php'
 ?>
-<body style="background: url('bg/udm.jpg');">
-    
+
   <div class="container1"   style="margin-top:-30px;">
       <?php
         include'navigation.php';

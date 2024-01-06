@@ -41,7 +41,7 @@
           <img src="img/cet.png" alt="CETLogo" class="cetlogo" style="width: 60px; position: absolute; right: 10px;">             
         </div>
         <div class="bg">
-          <img src="img/aaa.jpg" alt="avt" class="avt">
+          <img src="img/bg.png" alt="avt" class="avt">
         </div>
         
       <div class="sidebar">

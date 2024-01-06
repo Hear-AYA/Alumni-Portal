@@ -11,7 +11,6 @@
     extract($row);
 
 ?>
-<body style="background: url('bg/udm.jpg');">
     
   <div class="container1"   style="margin-top:-20px;">
       <?php 

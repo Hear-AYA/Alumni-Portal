@@ -80,7 +80,7 @@
             </ul>
         </div>
     </nav>
-    <img src="img/aaa.jpg" alt="avt" class="avt">  
+    <img src="img/bg.png" alt="avt" class="avt">  
 
     <div class="container1" style="height: 500px;"></div>
     
@@ -95,8 +95,6 @@
                 <input type="password" name="password" required>
                 <label>Password</label>
             </div>
-            <a href="forgot.php"><div class="pass">Forgot Password?</div></a>
-            <a href="gmail.php"><div class="pass">Login Using GMAIL?</div></a>
                 <input type="submit" value="Login">                 
             <div class="signup">
                 Don't have an account? <a href="CLIENT DASH/signup.php">Sign up</a> here!
