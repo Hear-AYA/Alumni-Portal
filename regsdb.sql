@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 07, 2023 at 02:44 PM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.2
+-- Generation Time: Jan 10, 2024 at 06:31 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -25,16 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `alumni_reponses`
---
-
-CREATE TABLE `alumni_reponses` (
-  `alumni_responses` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `announcement`
 --
 
@@ -46,7 +35,7 @@ CREATE TABLE `announcement` (
   `from_time` varchar(500) NOT NULL,
   `to_time` varchar(500) NOT NULL,
   `type` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `announcement`
@@ -54,12 +43,12 @@ CREATE TABLE `announcement` (
 
 INSERT INTO `announcement` (`id`, `title`, `description`, `date_time`, `from_time`, `to_time`, `type`) VALUES
 (3, 'UDM @28', 'Merlions join us as we celebrate our beloved Universityâ€™s 28th Founding Anniversary with the theme: â€œDestined 2 Be Gr8: Shaping the Future Through Quality Educationâ€ starting from April 23 till April 29, 2023.\r\nWe have lined up different activities for you to enjoy... so join us and have fun let us all celebrate UDMâ€™s 28th Glorious Years!!!', '2023-04-21', '07:40', '08:41', 'Event'),
-(4, 'SAP DISTRIBUTION', 'SAP distribution for UDM students officially enrolled during the 2nd Semester of SY 2022-2023\r\n', '2023-12-01', '10:00', '20:00', 'News'),
+(4, 'Christmas Break', 'We would like to inform you that the classes will end on December 22, 2023, and will resume on January 08, 2024.', '2023-12-21', '00:00', '12:00', 'News'),
 (5, 'CET WEEK', 'We would like to invite you to participate in the  upcoming week of the College of Engineering and Technology!!!', '2023-12-11', '07:00', '17:00', 'Event'),
 (6, 'CET WEEK', 'We would like to invite you to participate in the upcoming week of the College of Engineering and Technology!!!', '2023-12-12', '06:02', '18:02', 'Event'),
 (7, 'CET WEEK', 'We would like to invite you to participate in the IT43 exhibit, which will showcase the system that they have developed.', '2023-12-13', '09:00', '14:00', 'Event'),
-(8, 'CHRISTMAS BREAK ', 'Please be aware that the Christmas break will begin on December 21, 2023, and classes will resume on January 7, 2023, according to the university calendar.', '2023-12-21', '00:00', '12:00', 'News'),
-(11, 'test', 'eahdasdgahd', '2023-12-07', '07:50', '19:48', 'News');
+(8, 'CET WEEK', 'We would like to invite you to participate in the upcoming week of the College of Engineering and Technology!!!	', '2023-12-17', '00:53', '12:53', 'Event'),
+(9, 'DEFENSE', 'IT43 Capstone defense at CMIT Building Sta. Cruz, Manila. ', '2023-12-16', '07:00', '19:00', 'Event');
 
 -- --------------------------------------------------------
 
@@ -82,7 +71,7 @@ CREATE TABLE `job` (
   `competency` varchar(500) NOT NULL,
   `assignment` varchar(500) NOT NULL,
   `open_positions` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `job`
@@ -90,39 +79,29 @@ CREATE TABLE `job` (
 
 INSERT INTO `job` (`id`, `position_title`, `requirements`, `job`, `monthly_salary`, `education`, `training`, `experience`, `eligibility`, `research`, `community`, `competency`, `assignment`, `open_positions`) VALUES
 (1, 'NON-TEACHING VACANT POSITION', 'https://www.facebook.com/udmanila/posts/pfbid06jUoCkPW1NmEeZy4tkbeBLRiGurboopvtHnDqG42k1YoMFtNy4PAH1PG1x6GRGEUl', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test2', '2'),
-(3, 'TEACHING VACANT POSITIONS 2023', 'https://www.facebook.com/udmanila/posts/pfbid06jUoCkPW1NmEeZy4tkbeBLRiGurboopvtHnDqG42k1YoMFtNy4PAH1PG1x6GRGEUl', 'test3', 'test3', 'test3', 'test3', 'test3', 'test3', 'test3', 'test3', 'test3', 'test3', '5'),
-(9, 'dabdja', 'quillbot.com', '', '', '', '', '', '', '', '', '', '', '');
+(3, 'TEACHING VACANT POSITIONS 2023', 'https://www.facebook.com/udmanila/posts/pfbid06jUoCkPW1NmEeZy4tkbeBLRiGurboopvtHnDqG42k1YoMFtNy4PAH1PG1x6GRGEUl', 'test3', 'test3', 'test3', 'test3', 'test3', 'test3', 'test3', 'test3', 'test3', 'test3', '5');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `professional`
+-- Table structure for table `queries`
 --
 
-CREATE TABLE `professional` (
-  `id` int(250) NOT NULL,
-  `alumni_id` varchar(500) NOT NULL,
-  `rad1` varchar(500) NOT NULL,
-  `rad2` varchar(500) NOT NULL,
-  `rad3` varchar(500) NOT NULL,
-  `rad4` varchar(500) NOT NULL,
-  `rad5` varchar(500) NOT NULL,
-  `rad6` varchar(500) NOT NULL,
-  `rad7` varchar(500) NOT NULL,
-  `rad8` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE `queries` (
+  `id` int(11) NOT NULL,
+  `user_question` text NOT NULL,
+  `admin_reply` text DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Dumping data for table `professional`
+-- Dumping data for table `queries`
 --
 
-INSERT INTO `professional` (`id`, `alumni_id`, `rad1`, `rad2`, `rad3`, `rad4`, `rad5`, `rad6`, `rad7`, `rad8`) VALUES
-(6, '23 ', '1', '1', '0', '1', '', '', '', ''),
-(9, '26 ', '1', '0', '1', '0', '', '', '', ''),
-(10, '27 ', '1', '1', '1', '1', '', '', '', ''),
-(11, '28 ', '1', '1', '1', '1', '', '', '', ''),
-(14, '32 ', '1', '1', '1', '1', '', '', '', ''),
-(15, '33 ', '0', '1', '1', '0', '', '', '', '');
+INSERT INTO `queries` (`id`, `user_question`, `admin_reply`, `created_at`) VALUES
+(28, 'Hey', 'Hey bboboo', '2024-01-08 09:49:06'),
+(29, 'i ask question please answer', 'Hello yes please question away. ', '2024-01-10 03:55:30'),
+(32, 'UDM Management: Implementing a Maintenance Request Management System has resulted in a significant improvement in organizational productivity and safety. This system has led to an increase in efficiency in maintenance processes, improved communication between UDM Management and maintenance personnel, enhanced accountability, and prioritized safety concerns. It was highlighted that providing UDM Management with convenient access to resources and real-time tracking of their requests, including maintenance repair, equipment borrowing, and tools, is crucial. This emphasizes the overall benefits of implementing a maintenance request management system.', 'sahdasdh', '2024-01-10 04:00:46');
 
 -- --------------------------------------------------------
 
@@ -151,18 +130,20 @@ CREATE TABLE `regsinfo` (
   `verified` varchar(500) NOT NULL,
   `verify_number` varchar(500) NOT NULL,
   `type` varchar(500) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `regsinfo`
 --
 
 INSERT INTO `regsinfo` (`id`, `fullName`, `img_loc`, `email`, `pass`, `cpass`, `pnum`, `course`, `gender`, `award`, `year_graduated`, `current_job`, `job_experience`, `skill_expertise`, `dateofbirth`, `degree`, `address`, `verified`, `verify_number`, `type`) VALUES
-(12, 'UDM ADMIN', '1696529040_355721356_274600031814272_1868331215881352822_n.png', 'udma9126@gmail.com', 'adminako', 'admin0123', 9558456111, 'BSIT', 'Female', 'test', 'test', 'Data Analyst', 'test', 'test', '2023-10-04', 'test', '', '1', '750378', 'admin'),
-(23, 'Anne Viray', '', 'anneviray0716@gmail.com', '1234567890', '1234567890', 9235339629, 'BSIT', 'Female', '', '', '', '', '', '', '', '', '1', '950206', 'student'),
-(26, 'Nicolo Rae D. Santos', '', 'nicolorae02@gmail.com', 'zxcvbnm', 'zxcvbnm', 9064805623, 'BSBA', 'Male', '', '', '', '', '', '', '', '', '1', '', 'student'),
-(27, 'Kim My', '', 'kimmy@gmail.com', 'kimmy', 'kimmy', 9928374598, 'BSIT', 'Male', '', '', '', '', '', '', '', '', '1', '', 'student'),
-(33, 'RACHELL ANNE TEALBAN VIRAY', '', 'rachellanneviray16@gmail.com', 'asdfghjkl', 'asdfghjkl', 9235339629, 'BSIT', 'Female', 'test', '2024', 'test', 'test', 'test', '2000-07-16', 'test', 'test', '1', '915160', 'student');
+(12, 'UDM ADMIN', '1696529040_355721356_274600031814272_1868331215881352822_n.png', 'udma9126@gmail.com', 'adminako', 'adminako', 9558456111, 'BSIT', 'Female', 'test', 'test', 'Data Analyst', 'test', 'test', '2023-10-04', 'test', '', '1', '750378', 'admin'),
+(34, 'Emmanuel Mestizo', '', 'mestizoemmanuel@gmail.com', 'password', 'password', 9123658711, 'BSIT', 'Male', 'cumlaude', '2024', 'IT', 'Software developer', 'programming', '0023-02-23', 'BSIT', 'soliss tondo', '1', '844887', 'student'),
+(35, 'Sir Iverson S. Mallari UDMADMIN', '', 'iversonmallari1ADMIN@Gmail.com', '1234567', '1234567', 9554356843, 'BSIT', 'Male', 'Cum Laude', '2024', 'Astronaut', '10 yrs', 'UI/UX Designer', '2023-01-01', 'BSIT', '605 GERONA ST. TONDO, MANILA', '1', '918506', 'admin'),
+(38, 'Sir Iverson S. Mallari', '', 'iversonmallari1@gmail.com', '123456', '12345687', 9474513268, 'BSIT', 'Male', 'Cum Laude', '2023', 'cook', 'referee', 'data analyst', '2003-07-08', 'bsit', 'sta cruz manila', '1', '415198', 'student'),
+(73, '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', '', '1', '', 'student'),
+(74, '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', '', '1', '', 'student'),
+(75, '', '', '', '', '', 0, '', '', '', '', '', '', '', '', '', '', '1', '', 'student');
 
 --
 -- Indexes for dumped tables
@@ -181,9 +162,9 @@ ALTER TABLE `job`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `professional`
+-- Indexes for table `queries`
 --
-ALTER TABLE `professional`
+ALTER TABLE `queries`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -200,25 +181,25 @@ ALTER TABLE `regsinfo`
 -- AUTO_INCREMENT for table `announcement`
 --
 ALTER TABLE `announcement`
-  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `job`
 --
 ALTER TABLE `job`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `professional`
+-- AUTO_INCREMENT for table `queries`
 --
-ALTER TABLE `professional`
-  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+ALTER TABLE `queries`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `regsinfo`
 --
 ALTER TABLE `regsinfo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

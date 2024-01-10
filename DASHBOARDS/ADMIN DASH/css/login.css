@@ -20,7 +20,7 @@ body {
 }
 
 nav {
-    background-color: #1A5D1A;
+    background-color: #ee7214;
     height: 80px;
     width: 100%;
 }
@@ -31,6 +31,7 @@ label.LOGO {
     padding: 15px;
     display: inline-block;
     font-weight: bold;
+    border-color: black;
     
 }
 

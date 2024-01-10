@@ -9,7 +9,7 @@ include 'header.php';
 
     <div class="container1" style="margin-top:-20px;">
         <?php 
-            include 'navigation.php';
+            include 'details.php';
         ?>
         <div class="container2">
             <div class="job">
@@ -24,7 +24,7 @@ include 'header.php';
 
                 <?php
                 // Include the necessary database connection code
-                include 'connect/connect.php';
+                include 'connect.php';
 
                 // Handle query submission
                 if(isset($_POST['submit_question'])){
@@ -48,45 +48,22 @@ include 'header.php';
                     $query = "SELECT * FROM queries";
                     $result = $conn->query($query);
 
-                    if ($result !== FALSE) {
-                        if ($result->num_rows > 0) {
-                            while($row = $result->fetch_assoc()) {
-                                echo '<div class="query">';
-                                echo '<p>' . $row['user_question'] . '</p>';
-                                
-                                // Add a form for admin to reply to the query
-                                echo '<form method="POST">';
-                                echo '<input type="hidden" name="query_id" value="' . $row['id'] . '">';
-                                echo '<textarea name="admin_reply" placeholder="Admin Reply"></textarea>';
-                                echo '<button type="submit" name="submit_reply">Post Reply</button>';
-                                echo '</form>';
-                                
-                                echo '</div>';
-                            }
-                        } else {
-                            echo '<p>No queries found.</p>';
+                    while($row = $result->fetch_assoc()) {
+                        echo '<div class="query">';
+                        echo '<p>' . $row['user_question'] . '</p>';
+                        
+                        // Check if there is an admin reply
+                        if (!empty($row['admin_reply'])) {
+                            echo '<div class="admin-reply">';
+                            echo '<p><strong>Admin Reply:</strong></p>';
+                            echo '<p>' . $row['admin_reply'] . '</p>';
+                            echo '</div>';
                         }
-                    } else {
-                        echo '<p class="error-message">Error retrieving queries: ' . $conn->error . '</p>';
-                    }
+                        
+                        echo '</div>';
+                    }                    
                     ?>
                 </div>
-
-                <?php
-                // Handle admin replies
-                if(isset($_POST['submit_reply'])){
-                    $query_id = $_POST['query_id'];
-                    $admin_reply = $_POST['admin_reply'];
-
-                    // Update the 'queries' table with admin reply
-                    $update_query = "UPDATE queries SET admin_reply='$admin_reply' WHERE id='$query_id'";
-                    if ($conn->query($update_query) === TRUE) {
-                        echo '<p class="success-message">Reply posted successfully.</p>';
-                    } else {
-                        echo '<p class="error-message">Error posting reply: ' . $conn->error . '</p>';
-                    }
-                }
-                ?>
             </div>
         </div>
     </div>
