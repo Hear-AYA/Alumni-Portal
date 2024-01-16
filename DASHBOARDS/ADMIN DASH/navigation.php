@@ -1,5 +1,5 @@
 <div class="topbar">
-        <p style="color: #F7B787;">Welcome Admin!</p>
+        <p style="color: white;">Welcome Admin!</p>
         <img src="img/udm logo.png" alt="Avatar" class="" style="width: 45px;height: 45px;position: absolute;left: 95px;"> 
         <img src="img/cet.png" alt="CETLogo" class="cetlogo" style="width: 60px; position: absolute; right: 10px;">      
       </div>

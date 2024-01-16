@@ -19,7 +19,7 @@
     
   <div class="container1">
       <div class="topbar">
-        <p style="color: #F7B787;">Welcome Alumni!</p>
+        <p style="color: white;">Welcome Alumni!</p>
           <img src="img/udm logo.png" alt="Avatar" class="avatar">   
           <img src="img/cet.png" alt="CETLogo" class="cetlogo" style="width: 60px; position: absolute; right: 10px;">       
         </div>
