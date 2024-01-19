@@ -54,7 +54,7 @@ img.avt{
   height: 3px;
   width: 87px;
   border-radius: 12px;
-  background: #1A5D1A;
+  background: #ee7214;
 }
 .wrapper form{
   margin-top: 30px;
@@ -78,7 +78,7 @@ form .input-box input{
 }
 .input-box input:focus,
 .input-box input:valid{
-  border-color: #1A5D1A;
+  border-color: #ee7214;
 }
 form .policy{
   display: flex;
@@ -96,13 +96,13 @@ form h3{
   color: #fff;
   letter-spacing: 1px;
   border: none;
-  background: #1A5D1A;
+  background: #ee7214;
   cursor: pointer;
   position: relative;
   top: 315px;
 }
 .input-box.button input:hover{
-  background: #1A5D1A;
+  background: #ee7214;
 }
 
 input[type="checkbox"] {
@@ -119,7 +119,7 @@ form .text h3{
  
 }
 form .text h3 a{
-  color: #1A5D1A;
+  color: #ee7214;
   text-decoration: none;
   position: relative;
   bottom: 0px;

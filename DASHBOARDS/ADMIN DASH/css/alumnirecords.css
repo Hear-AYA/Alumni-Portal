@@ -34,7 +34,7 @@ img {
 
 .topbar {
     position: fixed;
-    background: #135c10;
+    background-color: #ee7214;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
     width: 100%;
     height: 60px;
@@ -104,7 +104,7 @@ img.avt{
     left: 0px;
     width: 260px;
     height: calc(100% - 60px);
-    background: #91cf8b;
+    background-color: #f7b787;
     overflow-x: hidden ;
 }
 
@@ -120,7 +120,7 @@ img.avt{
 }
 
 .sidebar ul li:hover {
-    background: #135c10;
+    background: #ee7214;
 }
 
 
