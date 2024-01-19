@@ -154,7 +154,7 @@ form .txt{
 .txt input:focus ~ label,
 .txt input:valid ~ label {
     top: -5px;
-    color: #1A5D1A;
+    color: #ee7214;
     font-weight: bold;
 }
 
