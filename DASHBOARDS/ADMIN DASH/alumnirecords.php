@@ -8,10 +8,7 @@
   table, th, td {
     border: 1px solid black;
 /*    padding: 20px;*/
-}
-.job-search{
-  margin-top: 80px;
-  margin-left: 300px
+
 }
 table {
     background-color: antiquewhite;
@@ -26,9 +23,6 @@ table {
 }
 </style>
 
-<div class="search-bar">
-        <input class="job-search" type="text" placeholder="Search here..."/>
-        </div>
     <img src="img/bg.png" alt="avt" class="avt">
     <div class="container-fluid" >
       <?php

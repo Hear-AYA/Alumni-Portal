@@ -68,14 +68,13 @@
     <nav>
         <div class="logo">
             <img src="img/udm logo.png" alt="UDMLOGO">
-            <label class="LOGO" style="color: #F7B787;">Universidad De Manila</label>
+            <label class="LOGO" style="color: white;">Universidad De Manila</label>
             <ul>
                 <li><a href="signup.php">Sign Up</a></li>
                 <img src="img/cet.png" alt="CETLogo" class="cetlogo">
             </ul>
         </div>
     </nav>
-    <img src="img/aaa.jpg" alt="avt" class="avt">  
 
     <div class="container1"></div>
     
