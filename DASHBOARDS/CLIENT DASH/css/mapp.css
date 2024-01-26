@@ -1,31 +1,11 @@
-body {
-	background: url('bg/udm.jpg');
-}
-
 .container1 {
 	margin-top: -20px;
-}
-
-.container2 {
-	/* Add your container styles here */
-}
-
-.job {
-	/* Add your job styles here */
-}
-
-.edit-form {
-	/* Add your form styles here */
 }
 
 .form {
 	width: 100%;
 	padding: 8px;
 	margin-bottom: 10px;
-}
-
-.btn {
-	/* Add your button styles here */
 }
 
 .queries {
@@ -130,7 +110,6 @@ body {
         }
 
 body {
-	background-image: url("img/UDM_Lights.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
